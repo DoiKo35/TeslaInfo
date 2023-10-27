@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+	<title>TeslaInfo - Написати повідомлення розробникам</title>
+	<meta name="keywords" content="Tesla, ModelS, TeslaInfo" />
+	<meta name="description" content="Написати повідомлення розробникам сайту TeslaInfo" />
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link href="style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+</head>
+
+<body>
+
+<div class="wrapper">
+
+	<header class="header">
+		<div>
+			<a href="index.html">
+			<img src="img/logo.jpg" width="183" height="110" alt="Tesla car логотип" title="TeslaInfo Логотип" />
+			<img src="img/banner.gif" width="728" height="90" alt="Tesla car - банер" title="Tesla - банер" style="margin: 0 0 10px 20px;" />
+			</a>
+		</div>
+		<div id="mainmenu">
+			<ul>
+				<li><a href="index.html"><i class="" aria-hidden="true"></i> Головна</a></li>
+				<li><a href="ispecifications.html"><i class="" aria-hidden="true"></i> Характеристики</a></li>
+				<li><a href="photo.html"><i class="" aria-hidden="true"></i> Фото</a></li>
+				<li><a href="video.html"><i class="" aria-hidden="true"></i> Відео</a></li>
+				<li><a class="active" href="#"><i class="" aria-hidden="true"></i> Контакти</a></li>
+			</ul>
+		</div>
+	</header><!-- .header-->
+
+	<div class="middle">
+
+		<div class="container">
+			<main class="content">
+				<h1>Написати повідомлення</h1>
+
+				<form id="form" class="blocks">
+					<p>
+						<label>Ім'я:</label>
+						<input type="text" class="text" name="name" />
+					</p>
+					<p>
+						<label>Адрес e-mail:</label>
+						<input type="text" class="text" name="email" />
+					</p>
+					<p>
+						<label>Телефон:</label>
+						<input type="text" class="text" name="phone" />
+					</p>
+					<p class="area">
+						<label>Повідомлення:</label>
+						<textarea class="textarea" name="message" placeholder="Тут ви можете написати повідомлення, до розробників сайту, на яке вам обов'язково надішлють відповідь."></textarea>
+					</p>
+					<p>
+						<label>&nbsp;</label>
+						<input type="submit" class="btn" value="Відправити" onClick="alert('Дякуємо за Ваше повідомлення!\nМи обов`язково з Вами зв'яжемося.');" />
+					</p>
+				</form>
+			</main><!-- .content -->
+		</div><!-- .container-->
+
+	</div><!-- .middle-->
+
+</div><!-- .wrapper -->
+
+<footer class="footer">
+	<strong><a href="index.html" title="TeslaInfo - Сайт про електромобілі Tesla">TeslaInfo</a></strong> © 2023<br />
+<span><span>
+</footer><!-- .footer -->
+
+</body>
+</html>

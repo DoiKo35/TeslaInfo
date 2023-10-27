@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+	<title>TeslaInfo - Відео про автомобілі Tesla</title>
+	<meta name="keywords" content="Tesla, ModelS, TeslaInfo" />
+	<meta name="description" content="Відео про автомобілі Tesla" />
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link href="style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+</head>
+
+<body>
+
+<div class="wrapper">
+
+	<header class="header">
+		<div>
+			<a href="index.html">
+			<img src="img/logo.jpg" width="183" height="110" alt="TeslaInfo Логотип" title="TeslaInfo Логотип" />
+			<img src="img/banner.gif" width="728" height="90" alt="Tesla - банер" title="Tesla - банер" style="margin: 0 0 10px 20px;" />
+			</a>
+		</div>
+		<div id="mainmenu">
+			<ul>
+				<li><a href="index.html"><i class="" aria-hidden="true"></i> Головна</a></li>
+				<li><a href="ispecifications.html"><i class="" aria-hidden="true"></i> Характеристики</a></li>
+				<li><a href="photo.html"><i class="" aria-hidden="true"></i> Фото</a></li>
+				<li><a class="active" href=""><i class="" aria-hidden="true"></i> Відео</a></li>
+				<li><a href="contact.html"><i class="" aria-hidden="true"></i> Контакти</a></li>
+			</ul>
+		</div>
+	</header><!-- .header-->
+
+	<div class="middle">
+
+		<div class="container">
+			<main class="content">
+				<div class="img_center" id="video">
+					<iframe src="http://www.youtube.com/embed/6d7ZgEeFiyA?rel=0" allowfullscreen="" frameborder="0" width="854" height="480"></iframe>
+				</div>
+			</main><!-- .content -->
+		</div><!-- .container-->
+
+		<aside class="right-sidebar">
+			<ul class="video-menu">
+				<li><img class="video-item" src="http://img.youtube.com/vi/6d7ZgEeFiyA/1.jpg"/><br />Тестдрайв</li>
+				<li><img class="video-item" src="http://img.youtube.com/vi/SCnDSIabaaE/1.jpg"/><br />Автопілот</li>
+				<li><img class="video-item" src="http://img.youtube.com/vi/VZS0Xu8kmFw/1.jpg"/><br />Завод Tesla</li>
+				<li><img class="video-item" src="http://img.youtube.com/vi/g52M3MKtLwA/1.jpg"/><br />Огляд Tesla Model 3</li>
+			</ul>
+		</aside><!-- .right-sidebar -->
+
+	</div><!-- .middle-->
+
+</div><!-- .wrapper -->
+
+<footer class="footer">
+	<strong><a href="index.html" title="TeslaInfo - Сайт про електромобілі Tesla">TeslaInfo</a></strong> © 2023<br />
+<span><span>
+</footer><!-- .footer -->
+
+<script>
+
+var images = document.querySelectorAll('.video-item'),
+    iframe = document.querySelector('#video iframe');
+
+for (var i = 0; i < images.length; i++) {
+	images[i].onclick = function() {
+		var video_id = this.src;
+		video_id = video_id.replace('http://img.youtube.com/vi/', '');
+		video_id = video_id.replace('/1.jpg', '');
+		iframe.src = 'http://www.youtube.com/embed/' + video_id + '?rel=0&autoplay=1';
+  }
+}
+</script>
+
+</body>
+</html>

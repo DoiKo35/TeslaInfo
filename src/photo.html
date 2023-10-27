@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+	<title>TeslaInfo - Фотографії автомобілей Tesla</title>
+	<meta name="keywords" content="Tesla, ModelS, TeslaInfo" />
+	<meta name="description" content="Фотографії автомобілей Tesla" />
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link href="style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+</head>
+
+<body>
+
+<div class="wrapper">
+
+	<header class="header">
+		<div>
+			<a href="index.html">
+			<img src="img/logo.jpg" width="183" height="110" alt="TeslaInfo Логотип" title="TeslaInfo Логотип" />
+			<img src="img/banner.gif" width="728" height="90" alt="Tesla - банер" title="Tesla - банер" style="margin: 0 0 10px 20px;" />
+			</a>
+		</div>
+		<div id="mainmenu">
+			<ul>
+				<li><a href="index.html"><i class="" aria-hidden="true"></i> Головна</a></li>
+				<li><a href="ispecifications.html"><i class="" aria-hidden="true"></i> Характеристики</a></li>
+				<li><a class="active" href=""><i class="" aria-hidden="true"></i> Фото</a></li>
+				<li><a href="video.html"><i class="" aria-hidden="true"></i> Відео</a></li>
+				<li><a href="contact.html"><i class="" aria-hidden="true"></i> Контакти</a></li>
+			</ul>
+		</div>
+	</header><!-- .header-->
+
+	<div class="middle">
+
+		<div class="container">
+			<main class="content">
+				<div class="img_center">
+					<img id="photo" src="img/photo/tesla-model-s-1.jpg" alt="Tesla Model S - Фото 1" title="Tesla Model S - Фото 1" width="854" height="397" />
+					<p id="pidpys" style="text-align: center;"><em>Tesla Model S - Фото 1</em></p>
+				</div>
+			</main><!-- .content -->
+		</div><!-- .container-->
+
+		<aside class="right-sidebar">
+			<ul class="video-menu">
+				<li><img class="photo-item" src="img/photo/mini-tesla-model-s-1.jpg" width="210" height="98" alt="Tesla Model S - Фото 1" /><br />Фото 1</li>
+				<li><img class="photo-item" src="img/photo/mini-tesla-model-s-2.jpg" width="210" height="98" alt="Tesla Model S - Фото 2" /><br />Фото 2</li>
+				<li><img class="photo-item" src="img/photo/mini-tesla-model-s-3.jpg" width="210" height="98" alt="Tesla Model S - Фото 3" /><br />Фото 3</li>
+				<li><img class="photo-item" src="img/photo/mini-tesla-model-s-4.jpg" width="210" height="98" alt="Tesla Model S - Фото 4" /><br />Фото 4</li>
+				<li><img class="photo-item" src="img/photo/mini-tesla-model-s-5.jpg" width="210" height="98" alt="Tesla Model S - Фото 5" /><br />Фото 5</li>
+				<li><img class="photo-item" src="img/photo/mini-tesla-model-s-6.jpg" width="210" height="98" alt="Tesla Model S - Фото 6" /><br />Фото 6</li>
+				<li><img class="photo-item" src="img/photo/mini-tesla-model-3-1.jpg" width="210" height="98" alt="Tesla Model 3 - Фото 7" /><br />Фото 7</li>
+				<li><img class="photo-item" src="img/photo/mini-tesla-model-3-2.jpg" width="210" height="98" alt="Tesla Model 3 - Фото 8" /><br />Фото 8</li>
+				<li><img class="photo-item" src="img/photo/mini-tesla-model-3-3.jpg" width="210" height="98" alt="Tesla Model 3 - Фото 9" /><br />Фото 9</li>
+			</ul>
+		</aside><!-- .right-sidebar -->
+
+	</div><!-- .middle-->
+
+</div><!-- .wrapper -->
+
+<footer class="footer">
+	<strong><a href="index.html" title="TeslaInfo - Сайт про електромобілі Tesla">TeslaInfo</a></strong> © 2023<br /> 
+<span><span>
+</footer><!-- .footer -->
+
+<script>
+
+var images = document.querySelectorAll('.photo-item'),
+	photo = document.querySelector('#photo'),
+    pidpys = document.querySelector('#pidpys em');
+
+for (var i = 0; i < images.length; i++) {
+	images[i].onclick = function() {
+		var img_src = this.src;
+		img_src = img_src.replace('mini-', '');
+		img_alt = this.alt;
+
+		photo.src = img_src;
+		photo.alt = img_alt;
+		photo.title = img_alt;
+		pidpys.innerText = img_alt;
+  }
+}
+</script>
+
+</body>
+</html>
